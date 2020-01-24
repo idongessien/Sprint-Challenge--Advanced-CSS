@@ -166,10 +166,15 @@ p {
   padding: 1.5% 0;
   width: 70%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media (max-width:500px) {
+  .mainNav {
+    width: 90%;
+  }
 }
 .mainNav h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 2% !important;
 }
 .mainNav nav ul {
@@ -179,6 +184,11 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width:500px) {
+  .mainNav nav ul {
+    width: 85%;
+  }
 }
 footer {
   color: #22283B;
@@ -190,8 +200,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width:500px) {
+  .home {
+    padding: 0 4%;
+  }
+}
 .home .intro img {
   border-radius: 5px;
+}
+@media (max-width:500px) {
+  .home .intro img {
+    width: 97%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -204,11 +226,28 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width:500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
+@media (max-width:500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -219,6 +258,11 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width:500px) {
+  .home .visit-planets {
+    padding-bottom: 0;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -226,8 +270,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .home .walk {
+    margin: 30px auto 10px;
+    flex-direction: column-reverse;
+    padding: 4% 0;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -245,6 +301,14 @@ footer {
   border-radius: 5px;
   border: 1px solid white;
 }
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 6%;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+}
 .home .walk .walk-text .btn:hover {
   font-size: 1.5rem;
   background: white;
@@ -258,6 +322,12 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto 3%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

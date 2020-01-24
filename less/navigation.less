@@ -1,27 +1,16 @@
 // Navigation code here
 
-// div class="mainNav">
-//     <h1>SpaceWalkers</h1>
-
-//     <nav>
-//       <ul>
-//         <li>Home</li>
-//         <li>Abiut Us</li>
-//         <li>Blog</li>
-//         <li>Contact</li>
-//         <li>Sign In</li>
-//       </ul>
-//     </nav>
-//   </div>
-
 .mainNav {
     background: @nav-bg;
     .boxsizing();
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
+    @media @phone {
+        width: 90%;
+      }
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 2% !important;
     } // end h1
 
@@ -30,6 +19,10 @@
             width: 55%;
             margin: 0 auto;
             .displayflex(row, space-evenly);
+
+            @media @phone {
+                width: 85%;
+              }
         } // end ul
     } // end nav
 } // end .mainNav
