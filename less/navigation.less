@@ -1,1 +1,37 @@
 // Navigation code here
+
+// div class="mainNav">
+//     <h1>SpaceWalkers</h1>
+
+//     <nav>
+//       <ul>
+//         <li>Home</li>
+//         <li>Abiut Us</li>
+//         <li>Blog</li>
+//         <li>Contact</li>
+//         <li>Sign In</li>
+//       </ul>
+//     </nav>
+//   </div>
+
+.mainNav {
+    background: @nav-bg;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5% 0;
+    text-align: center;
+    font-size: 2rem;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 2% !important;
+    } // end h1
+
+    nav {
+        ul{
+            width: 55%;
+            margin: 0 auto;
+            .displayflex(row, space-evenly);
+        } // end ul
+    } // end nav
+} // end .mainNav
