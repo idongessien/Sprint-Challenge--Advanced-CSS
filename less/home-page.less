@@ -62,6 +62,12 @@
 
       .btn {
         .buttons(@btn-bg-color, white);
+        border: 1px solid white;
+
+        &:hover {
+          .buttons(white, @btn-bg-color);
+          border: 1px solid @btn-bg-color;
+        }
       } // end .btn
     } // end .walk
 
