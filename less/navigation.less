@@ -1,1 +1,29 @@
 // Navigation code here
+.notblurred {
+    .mainNav {
+        background: @nav-bg;
+        .boxsizing();
+        text-align: center;
+        font-size: 1.5rem;
+    
+        @media @phone {
+            width: 90%;
+          }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2% !important;
+        } // end h1
+    
+        nav {
+            ul{
+                width: 55%;
+                margin: 0 auto;
+                .displayflex(row, space-evenly);
+    
+                @media @phone {
+                    width: 85%;
+                  }
+            } // end ul
+        } // end nav
+    } // end .mainNav
+}
